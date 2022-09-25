@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto+Condensed&display=swap');
+
+  /* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+h1{
+  font-family: "Outfit", "Roboto Condensed";
+  color: white;
+}
+
+body {
+    font-size: 15pt;
+    font-family: "Poppins"  ,"Gotham Rounded", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    background-color: #333333;
+}
+
+.num{
+  -webkit-border-radius: 0;
+  box-shadow: 5px 5px 10px #202020, -5px -5px 10px #202020;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-font-feature-settings: normal;
+}
+
+
+
+.calculator{
+  margin-top: 5%;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+  
+}
+
+.output{
+  padding: 15px;
+  
+  font-size: 2em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  grid-column: 1/-1;
+  box-shadow:  5px 5px 10px #202020, -5px -5px 10px #202020;
+  display: flex;
+  background: #fff;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  color: black;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+#output{
+  grid-column: span 4;
+}
+
+.num{
+  font-size: 2rem;
+  border-radius: 6px;
+  color: whitesmoke;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+
+.num:hover{
+  box-shadow: inset 5px 5px 10px #202020, inset -5px -5px 10px #202020;
+}
+
+#span-two{
+  grid-column: span 2;
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.c{
+  background-color: rgba(255, 0, 10, .75);
+}
+
+.c:hover{
+  box-shadow: inset 5px 5px 10px rgba(355, 0, 10, .75), inset -5px -5px 10px rgba(355, 0, 10, .75);
+}
+
+.e{
+  background-color: rgba(255, 255, 255, .75);
+  color: black;
+}
+
+.e:hover{
+  box-shadow: inset 5px 5px 10px rgba(255, 255, 255, .75), inset -5px -5px 10px rgba(255, 255, 255, .75);
+}
+
+
+
+input{
+  padding-left: 50px;
+  color: black;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+.output .previous-operand{
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+.output .current-operand{
+  font-size: 2.5rem;
+}
